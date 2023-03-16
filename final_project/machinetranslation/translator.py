@@ -20,13 +20,12 @@ def englishToFrench(english_text="No English text provided to translate"):
     Return:
     string: French text
     '''
-
     french_text = language_translator.translate(
                      text=english_text,
                      model_id='en-fr').get_result()
     return french_text["translations"][0]["translation"]
 
-def frenchToEnglish(french_text="No French text provided to translate"):
+def frenchToEnglish(french_text="Aucun texte Francais fourni pour la traduction"):
     '''
     French to English translates a French text to English using IBM
     Watson translation services
@@ -62,3 +61,8 @@ print(french_translation)
 english_translation = frenchToEnglish(french_translation)
 print(english_translation)
 
+english_translation = frenchToEnglish()
+print(english_translation)
+
+french_translation = englishToFrench()
+print(french_translation)
