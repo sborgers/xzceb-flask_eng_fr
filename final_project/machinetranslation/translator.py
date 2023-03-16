@@ -1,6 +1,6 @@
 '''
-This module provides a proof of concept implementation of the IBM Waton translation service
-Translating from Englih to French and back to English again
+This module provides a proof of concept implementation of the IBM Watson translation service
+Translating from English to French and back to English again
 '''
 
 import os
@@ -28,7 +28,7 @@ def englishToFrench(english_text="No English text provided to translate"):
 
 def frenchToEnglish(french_text="No French text provided to translate"):
     '''
-    frenchToenglish translates a French text to English using IBM
+    French to English translates a French text to English using IBM
     Watson translation services
 
     Args:
@@ -61,3 +61,4 @@ print(french_translation)
 
 english_translation = frenchToEnglish(french_translation)
 print(english_translation)
+
